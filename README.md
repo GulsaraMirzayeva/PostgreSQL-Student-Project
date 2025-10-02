@@ -37,8 +37,6 @@ JOIN exams e ON s.id = e.student_id;
 ```
 
 
-📸 Screenshots
-
 ## 📸 Screenshots
 Screenshots of query results are available in the `screenshots/` folder:  
 - 01_students_table.png  
