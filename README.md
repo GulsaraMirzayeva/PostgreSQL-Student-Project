@@ -110,6 +110,8 @@ We created the **exams** table with exam results and linked it to students using
 
 I'm Gülsarə Mirzəyeva, transitioning into the field of Data Analytics & Data Science.
 I create projects like this one to strengthen my SQL, database design, and analytical skills, while building a portfolio that reflects real-world use cases.
-📫 LinkedIn
+
+📫 LinkedIn: https://www.linkedin.com/in/gulsara-mirzayeva-298a3b359/  
 
 📧 Email: mirzayevagulsare@gmail.com
+
