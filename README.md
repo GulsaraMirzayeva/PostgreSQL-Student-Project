@@ -36,65 +36,75 @@ FROM students s
 JOIN exams e ON s.id = e.student_id;
 ```
 
-📸 Results & Explanations
-1️⃣ Students Table
+## 📸 Results & Explanations
+
+### 1️⃣ Students Table
+![Students Table](screenshots/01_students_table.png)  
+We created the students table with personal and academic details.  
+👉 In real environments, this forms the foundation of a student information system (SIS).  
+
+---
+
+### 2️⃣ Order by GPA
+![Order by GPA](screenshots/02_order_by_gpa.png)  
+Query to list students ordered by GPA in ascending order.  
+👉 Useful for ranking students or generating merit lists.  
+
+---
+
+### 3️⃣ Distinct Universities
+![Distinct Universities](screenshots/03_distinct_universities.png)  
+Extracted unique university names from the dataset.  
+👉 Prevents duplicates and helps generate clean reports.  
+
+---
+
+### 4️⃣ Average GPA by University
+![Average GPA](screenshots/04_group_by_avg_gpa.png)  
+Calculated the average GPA for each university.  
+👉 Important for institutional performance analysis.  
+
+---
+
+### 5️⃣ Students with GPA Above 3.5
+![GPA Above 3.5](screenshots/05_gpa_above_3.5.png)  
+Filtered students whose GPA is higher than 3.5.  
+👉 Used for scholarship eligibility checks or honors programs.  
+
+---
+
+### 6️⃣ Ongoing Students
+![Present Students](screenshots/06_present_students.png)  
+Selected students whose graduation date is marked as "Present".  
+👉 Represents active students still enrolled at the university.  
 
 
-We created the students table with personal and academic details.
-👉 In real environments, this forms the foundation of a student information system (SIS).
-
-2️⃣ Order by GPA
-
-
-Query to list students ordered by GPA in ascending order.
-👉 Useful for ranking students or generating merit lists.
-
-3️⃣ Distinct Universities
-Extracted unique university names from the dataset.
-👉 Prevents duplicates and helps generate clean reports.
-
-4️⃣ Average GPA by University
+### 7️⃣ Union Example
+![Union Example](screenshots/07_union_example.png)  
+We combined `university_name` and `major` into one result set using **UNION**.  
+👉 Useful for merging data with similar structures from different sources.
 
 
-Calculated the average GPA for each university.
-👉 Important for institutional performance analysis.
-5️⃣ Students with GPA Above 3.5
+### 8️⃣ Adding & Updating Gender
+![Add Gender Column](screenshots/08_add_gender_column.png)  
+We added a new **gender** column to the students table.  
+👉 Demonstrates schema evolution (adapting tables to new requirements).  
 
+![Update Gender Column](screenshots/09_update_gender_column.png)  
+Then we updated the gender values for each student.  
+👉 Shows how missing data can be filled and maintained in practice.
 
-Filtered students whose GPA is higher than 3.5.
-👉 Used for scholarship eligibility checks or honors programs.
-
-6️⃣ Ongoing Students
-
-
-Selected students whose graduation date is marked as "Present".
-👉 Represents active students still enrolled at the university.
-
-7️⃣ Union Example
-
-
-Combined university_name and major into one result set.
-👉 Useful for merging datasets with similar structures.
-
-8️⃣ Adding & Updating Gender
-
-
-
-
-We added a gender column and updated values.
-👉 Shows schema evolution and handling of missing data.
-
-9️⃣ Exams Table
 
 
 Created a second table with exam results and linked it to students via a foreign key.
 👉 Demonstrates relational database design (1-to-many relationship).
 
-🔟 Students with Exam Results
+### 🔟 Exams Table
+![Exams Table](screenshots/10_exams_table.png)  
+We created the **exams** table with exam results and linked it to students using a **foreign key**.  
+👉 Demonstrates relational database design (1-to-many relationship).  
+👉 In real-world systems, this allows storing multiple exam results for each student.
 
-
-Joined students with their exam scores.
-👉 A real-world case of combining personal info with academic performance for reporting.
 
 👩‍💻 About Me
 
