@@ -34,6 +34,7 @@ GROUP BY university_name;
 SELECT s.name, s.surname, e.subject, e.score
 FROM students s
 JOIN exams e ON s.id = e.student_id;
+```
 
 
 📸 Screenshots
