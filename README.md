@@ -36,25 +36,70 @@ FROM students s
 JOIN exams e ON s.id = e.student_id;
 ```
 
-
-## 📸 Screenshots
-Screenshots of query results are available in the `screenshots/` folder:  
-- 01_students_table.png  
-- 02_order_by_gpa.png  
-- 03_distinct_universities.png  
-- 04_group_by_avg_gpa.png  
-- 05_gpa_above_3.5.png  
-- 06_present_students.png  
-- 07_union_example.png  
-- 08_add_gender_column.png  
-- 09_update_gender_column.png  
-- 10_exams_table.png  
-- 11_students_exams_join.png  
+📸 Results & Explanations
+1️⃣ Students Table
 
 
-## 👩‍💻 About Me
-I'm **Gülsarə Mirzəyeva**, transitioning into the field of **Data Analytics & Data Science**.  
-I create projects like this one to strengthen my SQL, database design, and analytical skills, while building a portfolio that reflects real-world use cases.  
+We created the students table with personal and academic details.
+👉 In real environments, this forms the foundation of a student information system (SIS).
 
-📫 [LinkedIn](https://www.linkedin.com/in/gulsara-mirzayeva-298a3b359/)  
+2️⃣ Order by GPA
+
+
+Query to list students ordered by GPA in ascending order.
+👉 Useful for ranking students or generating merit lists.
+
+3️⃣ Distinct Universities
+Extracted unique university names from the dataset.
+👉 Prevents duplicates and helps generate clean reports.
+
+4️⃣ Average GPA by University
+
+
+Calculated the average GPA for each university.
+👉 Important for institutional performance analysis.
+5️⃣ Students with GPA Above 3.5
+
+
+Filtered students whose GPA is higher than 3.5.
+👉 Used for scholarship eligibility checks or honors programs.
+
+6️⃣ Ongoing Students
+
+
+Selected students whose graduation date is marked as "Present".
+👉 Represents active students still enrolled at the university.
+
+7️⃣ Union Example
+
+
+Combined university_name and major into one result set.
+👉 Useful for merging datasets with similar structures.
+
+8️⃣ Adding & Updating Gender
+
+
+
+
+We added a gender column and updated values.
+👉 Shows schema evolution and handling of missing data.
+
+9️⃣ Exams Table
+
+
+Created a second table with exam results and linked it to students via a foreign key.
+👉 Demonstrates relational database design (1-to-many relationship).
+
+🔟 Students with Exam Results
+
+
+Joined students with their exam scores.
+👉 A real-world case of combining personal info with academic performance for reporting.
+
+👩‍💻 About Me
+
+I'm Gülsarə Mirzəyeva, transitioning into the field of Data Analytics & Data Science.
+I create projects like this one to strengthen my SQL, database design, and analytical skills, while building a portfolio that reflects real-world use cases.
+📫 LinkedIn
+
 📧 Email: mirzayevagulsare@gmail.com
